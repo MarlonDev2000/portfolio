@@ -6,6 +6,7 @@
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   color: var(--primary-white);
+  scroll-behavior: smooth;
 }
 :root {
   --primary-black: #131515;
@@ -61,17 +62,17 @@ body {
   font-size: 20px;
 }
 
-/* CONTAINER */
 
-.container {
+/* HOME */
+
+.home-container{
   margin: 0 250px;
   color: #fff;
 }
 
-/* HOME */
-
 .home {
   padding: 50px;
+  height: 95vh;
 }
 
 .home-text--main {
@@ -131,6 +132,55 @@ body {
   animation: pulse 1s infinite;
   animation-direction: alternate;
   animation-name: pulse;
+}
+
+.home-scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 200px;
+  font-weight: bold;
+  animation: pulse 1s infinite;
+  animation-direction: alternate;
+  animation-name: pulse;
+}
+
+/* ABOUT */
+
+.about {
+  background-color: var(--primary-gray);
+}
+
+.about-container{
+  height: 60vh;
+  margin: 0px 250px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image {
+  margin-right: 150px;
+}
+
+.about-image img{
+  width: 250px;
+  border-left: 5px solid var(--light-blue);
+  border-radius: 5px;
+}
+
+.about-text span {
+  display: block;
+  font-weight: bold;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.about-text {
+  font-size: 20px;
 }
 
 
