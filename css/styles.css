@@ -1,0 +1,157 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: var(--primary-white);
+}
+:root {
+  --primary-black: #131515;
+  --primary-gray: #2B2C28;
+  --primary-white: #FFFAFB;
+  --light-blue: #3FF0D2;
+  --dark-blue: #1a5b50;
+}
+
+body {
+  background-color: var(--primary-black);
+}
+
+/* HEADER */
+.header {
+  background-color: var(--primary-gray);
+  width: 100%;
+  height: 110px;
+  display: flex;
+  border-bottom: 2px solid var(--dark-blue);
+}
+
+.nav-bar {
+  width: 100%;
+  margin: 0 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-name {
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--light-blue);
+  margin: 0;
+}
+
+.nav-name span {
+  color: var(--primary-white);
+}
+
+.nav-links {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--primary-white);
+  padding: 0;
+}
+
+.nav-links li {
+  list-style: none;
+  font-size: 20px;
+}
+
+/* CONTAINER */
+
+.container {
+  margin: 0 250px;
+  color: #fff;
+}
+
+/* HOME */
+
+.home {
+  padding: 50px;
+}
+
+.home-text--main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-text--main h2 {
+  font-size: 28px;
+  font-weight: normal;
+  font-weight: 300;
+}
+
+.home-text--main h2 span {
+  color: var(--light-blue);
+  font-size: 56px;
+  display: block;
+  margin: 6px 0;
+  font-weight: 400;
+}
+
+.home-text--main h2 span::after {
+  content: '|';
+  margin-left: 1px;
+  opacity: 1;
+  animation: pisca 0.7s infinite;
+}
+
+.home-text--main img {
+  width: 600px;
+}
+
+.home-links {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -150px;
+}
+
+.home-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+  padding: 10px 15px;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+}
+
+.home-links .linkedin, .home-links .github {
+  border-image-source: linear-gradient(to right, var(--light-blue), var(--dark-blue));
+  animation: pulse 1s infinite;
+  animation-direction: alternate;
+  animation-name: pulse;
+}
+
+
+@keyframes pisca{
+  0%, 100%{
+      opacity: 1;
+  }
+  50%{
+      opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    filter: brightness(100%);
+  }
+
+  100% {
+    transform: scale(1.05);
+    filter: brightness(200%);
+  }
+}
+
