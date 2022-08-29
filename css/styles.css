@@ -31,10 +31,9 @@ body {
 
 .nav-bar {
   width: 100%;
-  margin: 0 250px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .nav-name {
@@ -52,7 +51,7 @@ body {
   width: 25%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   color: var(--primary-white);
   padding: 0;
 }
@@ -62,56 +61,46 @@ body {
   font-size: 20px;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
 
 /* HOME */
 
-.home-container{
-  margin: 0 250px;
-  color: #fff;
-}
-
-.home {
-  padding: 50px;
-  height: 95vh;
-}
-
-.home-text--main {
+.home-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 75vh;
 }
 
-.home-text--main h2 {
-  font-size: 28px;
-  font-weight: normal;
-  font-weight: 300;
-}
-
-.home-text--main h2 span {
-  color: var(--light-blue);
-  font-size: 56px;
-  display: block;
-  margin: 6px 0;
+.home-text--main {
+  font-size: 20px;
   font-weight: 400;
 }
 
-.home-text--main h2 span::after {
+.home-text--span {
+  display: block;
+  font-size: 46px;
+  color: var(--light-blue);
+}
+
+.home-text--main .home-text--span::after {
   content: '|';
   margin-left: 1px;
   opacity: 1;
   animation: pisca 0.7s infinite;
 }
 
-.home-text--main img {
-  width: 600px;
+.home-image--main img {
+  width: 500px;
 }
 
 .home-links {
-  width: fit-content;
+  font-size: 16px;
+  margin-top: 35px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -150px;
 }
 
 .home-links a {
@@ -125,9 +114,6 @@ body {
   border: 10px solid;
   border-image-slice: 1;
   border-width: 3px;
-}
-
-.home-links .linkedin, .home-links .github {
   border-image-source: linear-gradient(to right, var(--light-blue), var(--dark-blue));
   animation: pulse 1s infinite;
   animation-direction: alternate;
@@ -138,8 +124,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
-  margin-top: 200px;
+  font-size: 16px;
+  margin-bottom: 50px;
   font-weight: bold;
   animation: pulse 1s infinite;
   animation-direction: alternate;
@@ -152,35 +138,26 @@ body {
   background-color: var(--primary-gray);
 }
 
-.about-container{
-  height: 60vh;
-  margin: 0px 250px;
-  padding: 50px;
+.about-main {
+  padding: 100px 0;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.about-image {
-  margin-right: 150px;
-}
-
-.about-image img{
-  width: 250px;
-  border-left: 5px solid var(--light-blue);
+.about-photo img {
+  border-left: 2px solid var(--light-blue);
   border-radius: 5px;
+  margin-right: 100px;
+}
+
+.about-text {
+  font-size: 20px;
 }
 
 .about-text span {
   display: block;
   font-weight: bold;
-  font-size: 26px;
   text-transform: uppercase;
-  margin-bottom: 15px;
-}
-
-.about-text {
-  font-size: 20px;
 }
 
 

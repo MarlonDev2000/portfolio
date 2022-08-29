@@ -7,6 +7,6 @@ function Writer(e){
     }, 250 * i)
   });
 }
-const titulo = document.querySelector('#home-text--span');
+const titulo = document.querySelector('.home-text--span');
 Writer(titulo);
 
