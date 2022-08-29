@@ -10,8 +10,3 @@ function Writer(e){
 const titulo = document.querySelector('#home-text--span');
 Writer(titulo);
 
-setInterval(()=>{
-  Writer(titulo)
-  console.log('1')
-}, 8000)
-
