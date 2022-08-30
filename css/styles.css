@@ -113,16 +113,11 @@ body {
   margin-right: 40px;
   padding: 10px 15px;
   background-color: transparent;
-  border-radius: 6px;
   border: 10px solid;
   border-image-slice: 1;
-  border-width: 3px;
+  border-width: 1px;
   border-image-source: linear-gradient(to right, var(--light-blue), var(--dark-blue));
-  animation: pulse 1s infinite;
-  animation-direction: alternate;
-  animation-name: pulse;
 }
-
 
 .home-scroll {
   display: flex;
@@ -195,12 +190,13 @@ body {
   border-width: 5px;
   border-image-source: linear-gradient(to right, var(--light-blue), var(--dark-blue));
   width: 390px;
-  height: 550px;
+  height: 500px;
   padding: 10px;
 }
 
 .grid-item img {
   width: 100%;
+  height: 250px;
 }
 
 .project-title {
@@ -258,7 +254,7 @@ body {
   }
 
   100% {
-    transform: scale(1.05);
+    transform: scale(1.25);
     filter: brightness(200%);
   }
 }
