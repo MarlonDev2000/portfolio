@@ -149,8 +149,11 @@ body {
 }
 
 .about-photo img {
-  border-left: 2px solid var(--light-blue);
-  border-radius: 5px;
+  border-radius: 6px;
+  border-left: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(180deg, var(--light-blue) 0%, var(--dark-blue) 100%);
   margin-right: 100px;
 }
 
@@ -167,7 +170,8 @@ body {
 /* PROJECTS */
 
 .projects-main {
-  padding: 50px 0;
+  padding-top: 30px;
+  padding-bottom: 150px;
 }
 
 .projects-main--text {
@@ -180,7 +184,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  gap: 20px;
+  gap: 20px 5px;
 }
 
 .grid-item {
@@ -190,9 +194,13 @@ body {
   border-image-slice: 1;
   border-width: 5px;
   border-image-source: linear-gradient(to right, var(--light-blue), var(--dark-blue));
-  width: 100%;
+  width: 390px;
   height: 550px;
   padding: 10px;
+}
+
+.grid-item img {
+  width: 100%;
 }
 
 .project-title {
@@ -216,26 +224,8 @@ body {
   color: var(--light-blue);
 }
 
-/* footer */
-
-.footer {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  text-align: center;
-  height: 50px;
-  background-color: var(--primary-gray);
-}
-
-.footer span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
-}
 
 /* BARRA DE ROLAGEM */
-
 ::-webkit-scrollbar {
   width: 12px;
 }
