@@ -12,8 +12,8 @@
   --primary-black: #131515;
   --primary-gray: #2B2C28;
   --primary-white: #FFFAFB;
-  --light-blue: #3FF0D2;
-  --dark-blue: #1a5b50;
+  --light-blue: #8257e6;
+  --dark-blue: #533a8b;
 }
 
 body {
@@ -237,7 +237,7 @@ body {
 
 .grid-item img {
   width: 100%;
-  height: 250px;
+  height: 50%;
 }
 
 .project-title {
@@ -291,12 +291,10 @@ body {
 @keyframes pulse {
   0% {
     transform: scale(1);
-    filter: brightness(100%);
   }
 
   100% {
     transform: scale(1.25);
-    filter: brightness(200%);
   }
 }
 
