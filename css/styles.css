@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: var(--primary-white);
   scroll-behavior: smooth;
@@ -123,6 +123,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.home-scroll--text {
+  display: inline-block;
   font-size: 16px;
   margin-bottom: 50px;
   font-weight: bold;
@@ -220,7 +224,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  gap: 20px 5px;
+  gap: 20px 15px;
 }
 
 .grid-item {
@@ -230,13 +234,21 @@ body {
   border-image-slice: 1;
   border-width: 5px;
   border-image-source: linear-gradient(to right, var(--light-blue), var(--dark-blue));
-  width: 390px;
-  height: 500px;
   padding: 10px;
+  height: 500px;
+  transition: all ease-in-out 0.4s;
+}
+
+.grid-item:hover {
+  transform: scale(1.03);
 }
 
 .grid-item img {
   width: 100%;
+  height: 50%;
+}
+
+.grid-info {
   height: 50%;
 }
 
@@ -297,4 +309,104 @@ body {
     transform: scale(1.25);
   }
 }
+
+
+@media (max-width: 1042px) {
+
+  /* HOME */
+  .home-main {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .home-text--main {
+    width: 100%;
+  }
+
+  .home-title {
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .home-title h1 {
+    font-size: 28px;
+  }
+
+  .home-text--span {
+    font-size: 40px;
+  }
+
+  .home-links {
+    margin: 35px auto;
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  .home-links a {
+    margin-right: 0;
+  }
+
+  .home-image--main img {
+    width: 300px;
+  }
+
+  /* ABOUT */
+
+  .aboutInfo {
+    flex-direction: column;
+  }
+
+  .about-photo img {
+    margin-right: 0;
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+    border-right: 0px solid;
+    border-left: 0px solid;
+  }
+  
+  .about-text {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .about-text span {
+    font-size: 22px;
+  }
+
+  .aboutAbilities--text {
+    font-size: 22px;
+  }
+
+  .abilities-item {
+    padding: 25px;
+    width: 130px;
+  }
+
+  /* PROJECTS */
+  .projects-main--text {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .projects-main--grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 25px;
+  }
+  
+  .project-title {
+    font-size: 24px;
+  }
+
+  .project-info {
+    font-size: 14px;
+  }
+
+  .project-link {
+    font-size: 16px;
+  }
+}
+
 
