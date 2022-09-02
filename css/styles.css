@@ -61,6 +61,17 @@ body {
   font-size: 20px;
 }
 
+.menu-btn {
+  display: none;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.menu-btn img {
+  width: 40px;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -235,7 +246,7 @@ body {
   border-width: 5px;
   border-image-source: linear-gradient(to right, var(--light-blue), var(--dark-blue));
   padding: 10px;
-  height: 500px;
+  height: 600px;
   transition: all ease-in-out 0.4s;
 }
 
@@ -271,6 +282,16 @@ body {
 
 .project-link a {
   color: var(--light-blue);
+  display: block;
+  border: 1px solid var(--light-blue);
+  width: fit-content;
+  margin-top: 10px;
+  padding: 5px;
+  transition: all ease-in-out 0.3s;
+}
+
+.project-link a:hover {
+  background-color: var(--primary-white);
 }
 
 
@@ -311,7 +332,7 @@ body {
 }
 
 
-@media (max-width: 1042px) {
+@media (max-width: 1060px) {
 
   /* HOME */
   .home-main {
@@ -380,6 +401,10 @@ body {
     font-size: 22px;
   }
 
+  .abilities-main--grid {
+    gap: 2rem;
+  }
+
   .abilities-item {
     padding: 25px;
     width: 130px;
@@ -406,6 +431,108 @@ body {
 
   .project-link {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 780px) {
+
+  /* HEADER */
+  .nav-name {
+    font-size: 30px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  /* HOME */
+  .home-title h1 {
+    font-size: 18px;
+  }
+
+  .home-text--span {
+    font-size: 26px;
+  }
+
+  .home-links {
+    font-size: 14px;
+  }
+
+  /* ABOUT */
+  .about-text {
+    padding: 0px 15px;
+  }
+
+  .abilities-main--grid {
+    gap: 1rem;
+    padding: 0px 15px;
+  }
+  
+  .abilities-item {
+    padding: 15px;
+  }
+
+  /* PROJECTS */
+
+  .projects-main--grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px 25px;
+  }
+
+  .grid-info {
+    text-align: center;
+  }
+
+  .project-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+
+  /* HEADER */
+  .nav-name {
+    font-size: 24px;
+  }
+  
+  /* HOME */
+  .home-links {
+    font-size: 10px;
+  }
+
+  .home-links a {
+    padding: 5px;
+  }
+
+  .home-image--main img {
+    width: 200px;
+  }
+
+  .home-scroll--text {
+    font-size: 12px;
+  }
+
+  /* ABOUT */
+
+  .abilities-main--grid {
+    gap: 0.5rem;
+  }
+
+  .abilities-item {
+    padding: 5px;
+  }
+
+  /* PROJECTS */
+
+  .project-link {
+    flex-direction: column;
   }
 }
 
