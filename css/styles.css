@@ -24,7 +24,7 @@ body {
 .header {
   background-color: var(--primary-gray);
   width: 100%;
-  height: 110px;
+  height: 90px;
   display: flex;
   border-bottom: 2px solid var(--dark-blue);
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .nav-name {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 400;
   color: var(--light-blue);
   margin: 0;
@@ -47,29 +47,42 @@ body {
   color: var(--primary-white);
 }
 
-.nav-links {
-  width: 25%;
+.nav-toggle {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  color: var(--primary-white);
-  font-weight: 600;
 }
 
-.nav-links li {
-  list-style: none;
-  font-size: 20px;
+.nav-toggle input {
+  opacity: 0;
+  position: absolute;
+}
+
+.nav-toggle .label {
+  display: flex;
+  background: #8257E6;
+  width: 60px;
+  border-radius: 30px;
+  padding: 4px;
+  cursor: pointer;
+  transition: background-color .5s;
+}
+
+.nav-toggle .label .box {
+  background-color: #13131F;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  transition: .5s;
 }
 
 .menu-btn {
-  display: none;
   outline: 0;
   border: 0;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .menu-btn img {
-  width: 40px;
+  width: 20px;
 }
 
 .container {
@@ -140,7 +153,7 @@ body {
   display: inline-block;
   font-size: 16px;
   margin-bottom: 50px;
-  font-weight: bold;
+  font-weight: 600;
   animation: pulse 1s infinite;
   animation-direction: alternate;
   animation-name: pulse;
@@ -166,7 +179,7 @@ body {
 
 .aboutAbilities--text {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 15px;
 }
 
@@ -214,7 +227,7 @@ body {
 
 .about-text span {
   display: block;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -226,8 +239,9 @@ body {
 }
 
 .projects-main--text {
+  text-align: center;
   font-size: 42px;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 15px;
 }
 
@@ -505,9 +519,12 @@ body {
   /* HOME */
   .home-links {
     font-size: 10px;
+    display: flex;
+    flex-direction: column;
   }
 
   .home-links a {
+    margin-bottom: 10px;
     padding: 5px;
   }
 

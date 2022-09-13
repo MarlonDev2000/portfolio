@@ -14,21 +14,16 @@
 <body>
   <header class="header">
     <nav class="nav-bar">
-      <h1 class="nav-name">&lt;<span>Marlon Braga</span>/&gt;</h1>
-      <ul class="nav-links">
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="#about">Sobre</a>
-        </li>
-        <li>
-          <a href="#projects">Projetos</a>
-        </li>
-      </ul>
       <button class="menu-btn">
         <img src="images/menu.svg" alt="">
       </button>
+      <h1 class="nav-name">&lt;<span>Marlon Braga</span>/&gt;</h1>
+      <div class="nav-toggle">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+            <div class="box"></div>
+        </label>
+    </div>
     </nav>
   </header>
 
@@ -204,5 +199,6 @@
   </section>
 
   <script src="js/Writer.js"></script>
+  <script src="js/Menu.js"></script>
 </body>
 </html>
