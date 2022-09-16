@@ -473,12 +473,14 @@ body {
   }
 
   .abilities-main--grid {
+    flex-wrap: wrap;
     gap: 1rem;
-    padding: 0px 15px;
+    justify-content: center;
   }
   
   .abilities-item {
-    padding: 15px;
+    padding: 30px;
+    width: 150px;
   }
 
   /* PROJECTS */
@@ -535,11 +537,14 @@ body {
   /* ABOUT */
 
   .abilities-main--grid {
-    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
   }
 
   .abilities-item {
-    padding: 5px;
+    padding: 15px;
+    width: 100px;
   }
 
   /* PROJECTS */
