@@ -1,3 +1,10 @@
+:root {
+  --primary-black: #131515;
+  --primary-gray: #2B2C28;
+  --primary-white: #F9F9F9;
+  --light-purple: #8257e6;
+  --dark-purple: #533a8b;
+}
 
 * {
   box-sizing: border-box;
@@ -5,21 +12,15 @@
   padding: 0px;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  color: var(--primary-white);
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
 }
 
-:root {
-  --primary-black: #131515;
-  --primary-gray: #2B2C28;
-  --primary-white: #FFFAFB;
-  --light-purple: #8257e6;
-  --dark-purple: #533a8b;
-}
 
 body {
   background-color: var(--primary-black);
+  color: var(--primary-white);
+  transition: background 0.4s;
 }
 
 /* HEADER */
@@ -28,7 +29,8 @@ body {
   width: 100%;
   height: 90px;
   display: flex;
-  border-bottom: 2px solid var(--dark-purple);
+  border-bottom: 1px solid var(--light-purple);
+  user-select: none;
 }
 
 .nav-bar {
@@ -56,7 +58,7 @@ body {
 }
 
 .nav-toggle img {
-  width: 40px;
+  width: 35px;
 }
 
 .menu-btn {
@@ -76,6 +78,7 @@ body {
 }
 
 /* HOME */
+
 
 .home-main {
   display: flex;
@@ -116,6 +119,7 @@ body {
 }
 
 .home-links a {
+  color: var(--primary-white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -304,6 +308,7 @@ body {
 /* BARRA DE ROLAGEM */
 ::-webkit-scrollbar {
   width: 12px;
+  background-color: var(--primary-black);
 }
 
 ::-webkit-scrollbar-thumb {
