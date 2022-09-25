@@ -26,6 +26,7 @@ theme.addEventListener('click', () => {
     abilitities.forEach((item)=>{
       item.style.backgroundColor = colors.primaryGray
     })
+    document.querySelector('.projects-main--text').style.color = colors.primaryGray
     let gridItem = document.querySelectorAll('.grid-item')
     gridItem.forEach((item)=>{
       item.style.backgroundColor = colors.primaryGray
